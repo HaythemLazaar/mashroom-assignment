@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${manrope.className} flex text-text`}>
         <Sidebar />
-        <main className="flex min-h-screen flex-col items-center justify-between py-20 px-8 w-full">
+        <main className="flex min-h-screen flex-col items-center justify-between py-20 px-8 w-full ml-[260px]">
           <Header />
           {children}
         </main>

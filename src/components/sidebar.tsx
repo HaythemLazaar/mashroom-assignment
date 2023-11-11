@@ -15,7 +15,7 @@ export default function Sidebar() {
   const path = usePathname();
 
   return (
-    <div className="h-[100vh] w-[260px] rounded-e-[10px] bg-surfaceTeal flex flex-col justify-between pl-10 py-10 pb-20">
+    <div className="h-[100vh] w-[260px] rounded-e-[10px] bg-surfaceTeal flex flex-col justify-between pl-10 py-10 pb-20 fixed">
       <div className="flex flex-col gap-32">
         <Image src="Logo.svg" height={30} width={135} alt="The Mashroom Logo" />
         <ul className="flex flex-col gap-4 w-fit">

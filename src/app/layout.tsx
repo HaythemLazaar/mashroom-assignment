@@ -2,6 +2,7 @@ import Sidebar from "@/components/sidebar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
+import Header from "@/components/header";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -19,7 +20,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${manrope.className} flex text-text`}>
         <Sidebar />
-        {children}
+        <main className="flex min-h-screen flex-col items-center justify-between py-20 px-8 w-full">
+          <Header />
+          {children}
+        </main>
       </body>
     </html>
   );

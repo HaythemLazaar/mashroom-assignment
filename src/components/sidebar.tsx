@@ -36,13 +36,13 @@ export default function Sidebar() {
         </ul>
       </div>
       <div className="flex flex-col gap-8">
-        <div className="flex gap-4 items-center px-4">
+        <div className="flex gap-4 items-center px-4 cursor-pointer hover:text-primary">
           <Setting2 size="24" />
           <h3>Settings</h3>
         </div>
-        <div className="flex gap-4 items-center px-4">
-          <Logout size="24" className="text-red-500" />
-          <h3 className="text-red-500">Logout</h3>
+        <div className="flex gap-4 items-center px-4 cursor-pointer text-red-500 hover:text-red-300">
+          <Logout size="24" />
+          <h3>Logout</h3>
         </div>
       </div>
     </div>

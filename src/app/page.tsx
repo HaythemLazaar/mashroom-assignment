@@ -1,7 +1,5 @@
-import Dashboard from "@/components/dashboard";
-import Header from "@/components/header";
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
-  return <Dashboard />;
+  return <><h1>Landing Page</h1><Link href="/home">Proceed To Dashboard</Link></>;
 }

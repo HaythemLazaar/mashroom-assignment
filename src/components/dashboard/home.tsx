@@ -3,12 +3,12 @@ import getTemplates from "@/server/templates";
 import Image from "next/image";
 import { ReactNode } from "react";
 
-export default function Dashboard() {
+export default function DashboardHome() {
   const templates = getTemplates();
   const models = getModels();
   return (
-    <div className="w-full flex flex-col pt-10">
-      <Section title="What do you want to create ?">
+    <div className="w-full flex flex-col pt-5">
+      <DashboardSection title="What do you want to create ?">
         <div className="flex gap-7">
           <CreateButton
             name="Packshot"
@@ -24,8 +24,8 @@ export default function Dashboard() {
             desc="Room creator using products bundles"
           />
         </div>
-      </Section>
-      <Section title="My Models (180)">
+      </DashboardSection>
+      <DashboardSection title="My Models (180)">
         <div className="flex flex-wrap gap-2">
           {models.map((image) => {
             return (
@@ -40,8 +40,8 @@ export default function Dashboard() {
             );
           })}
         </div>
-      </Section>
-      <Section title="Templates (100)">
+      </DashboardSection>
+      <DashboardSection title="Templates (100)">
         <div className="flex flex-wrap gap-4 justify-between">
           {templates.map((image) => {
             return (
@@ -61,12 +61,12 @@ export default function Dashboard() {
             );
           })}
         </div>
-      </Section>
+      </DashboardSection>
     </div>
   );
 }
 
-const Section = ({
+const DashboardSection = ({
   title,
   children,
 }: {

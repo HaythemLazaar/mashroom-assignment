@@ -18,8 +18,11 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## The requested endpoint `/comments`
+Table View
+![captures_chrome-capture-2023-10-12 (1)](https://github.com/HaythemLazaar/mashroom-assignment/assets/74047809/4cd6ed0d-0f2d-4d7d-b106-d5b7dcde9d51)
+Cards view
+![captures_chrome-capture-2023-10-12 (2)](https://github.com/HaythemLazaar/mashroom-assignment/assets/74047809/56dac1a9-825f-4a55-b2fb-a7720fb6c73b)
 
-![captures_chrome-capture-2023-10-12](https://github.com/HaythemLazaar/mashroom-assignment/assets/74047809/2348e645-6734-4c30-b7be-69efa62fad18)
 
 ## Deployment 
 The Deployment was done using Vercel Paas

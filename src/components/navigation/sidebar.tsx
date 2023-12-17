@@ -25,8 +25,8 @@ export default function Sidebar() {
     },
     {
       name: "3D Library", children: [
-        { name: "Templates", path: "/3d-library/templates" },
-        { name: "Props", path: "/3d-library/props" },
+        { name: "Templates", path: "/templates" },
+        { name: "Props", path: "/props" },
       ]
     },
     { name: "Tutorials", path: "/tutorials" },

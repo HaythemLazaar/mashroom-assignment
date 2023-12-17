@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${manrope.className} flex text-text max-w-[100vw]`}>
+      <body className={`${manrope.className} text-text max-w-[100vw]`}>
         {children}
       </body>
     </html>

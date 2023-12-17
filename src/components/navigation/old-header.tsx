@@ -1,9 +1,9 @@
 import { Notification, FilterSearch, SearchNormal1 } from "iconsax-react";
 import Image from "next/image";
 
-export default function Header() {
+export default function OldHeader() {
   return (
-    <div className="flex justify-between w-full py-5 z-10 pl-[280px]">
+    <div className="flex justify-between w-full py-5 z-10 pl-[280px] fixed top-0">
         <div className="flex gap-2 items-center border border-border bg-inputSurface xl:min-w-[760px] px-4 py-2 rounded-[4px]">
           <SearchNormal1 />
           <input

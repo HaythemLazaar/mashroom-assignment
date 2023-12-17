@@ -2,6 +2,8 @@ import Sidebar from "@/components/navigation/sidebar";
 import "../globals.css";
 import type { Metadata } from "next";
 import Header from "@/components/navigation/header";
+import OldHeader from "@/components/navigation/old-header";
+import OldSidebar from "@/components/navigation/old-sidebar";
 
 export const metadata: Metadata = {
     title: "Mashroom",

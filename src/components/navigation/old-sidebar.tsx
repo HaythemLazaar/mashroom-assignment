@@ -1,10 +1,11 @@
 "use client";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ArrowDown2, ArrowUp2, Logout, Setting2 } from "iconsax-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function Sidebar() {
+export default function OldSidebar() {
   const [activeNavTab, setActiveTab] = useState<string | null>(null);
   const navItems = [
     { name: "Home", path: "/home" },
@@ -39,8 +40,9 @@ export default function Sidebar() {
   }, [])
 
   return (
-    <div className="h-[calc(100vh-92px)] w-[260px] rounded-[10px] bg-surfaceTeal flex flex-col justify-between px-10 py-10 pb-10 fixed bottom-0">
+    <div className="h-[100vh] w-[260px] rounded-[10px] bg-surfaceTeal flex flex-col justify-between px-10 py-10 pb-20 fixed bottom-0">
       <div className="flex flex-col gap-20">
+        <Link href="/home"><Image src="/Logo.svg" height={30} width={135} alt="The Mashroom Logo" /></Link>
         <ul className="flex flex-col gap-2 w-full">
           {navItems.map((item) => {
             if (item.path) return (

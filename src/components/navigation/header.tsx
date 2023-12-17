@@ -6,17 +6,17 @@ export default function Header() {
   return (
     <div className="fixed top-0 flex justify-between w-full bg-[#D3E7F0] py-5 z-10 rounded-b-[10px]">
       <div className="flex gap-5 items-center">
-        <div className="w-[260px] flex items-center pl-10">
-          <Link href="/home"><Image src="Logo.svg" height={30} width={135} alt="The Mashroom Logo" /></Link>
+        <div className="w-[260px] flex items-center pl-14">
+          <Link href="/home"><Image src="/Logo.svg" height={30} width={135} alt="The Mashroom Logo" /></Link>
         </div>
         <div className="flex gap-2 items-center border border-border bg-inputSurface xl:min-w-[760px] px-4 py-2 rounded-[4px]">
-          <SearchNormal1 />
+          <SearchNormal1 size="20" />
           <input
-            className="bg-inputSurface placeholder:text-text focus-visible:outline-none w-full"
+            className="bg-inputSurface placeholder:text-text focus-visible:outline-none w-full text-sm"
             placeholder="Search artists, projects..."
           />
-          <button className="border border-border bg-inputSurface p-1 flex items-center rounded-[4px]">
-            <FilterSearch />
+          <button className="border border-border bg-inputSurface px-2 py-[6px] flex gap-2 items-center rounded-[4px]">
+            <FilterSearch size="20" />
             <h3 className="text-sm">Filter</h3>
           </button>
         </div>
